@@ -21,9 +21,8 @@ function updateObject(obj) {
   obj.bang = 'bang';
   
   return obj;
-<<<<<<< HEAD
 }
-=======
+
 }
 
 //Self-reference
@@ -39,4 +38,3 @@ function personMaker() {
     }
     return person;
   }
->>>>>>> 8a4d26ba02c321d7fab0424a2658a1384c632a7e
