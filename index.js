@@ -84,3 +84,28 @@ function personMaker() {
     }
     return enrolled;
   }
+
+  //Find by ID
+  function findById(items, idNum) {
+    for(let i=0; i<items.length; i++){
+      if(items[i].id===idNum){
+        return items[i]
+      }
+    }
+  }
+
+  //ValidateKeys Drill
+  function validateKeys(object, expectedKeys) {
+    // your code goes here
+    if(Object.keys(object).length !== expectedKeys.length){
+      return false;
+    }
+    for(let key in object){
+      for(let elem of expectedKeys){
+        if(key === elem){
+          return true;
+        }
+      }
+    }
+    return false;
+  }
